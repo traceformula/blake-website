@@ -20,7 +20,8 @@ sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
 
 body {
   padding-top: 100px;
-  font-family: "MS Sans-serif", 'sans-serif', 'Georgia';
+  /*font-family: "MS Sans-serif", 'sans-serif', 'Georgia';*/
+  font-family: "Helvetica", "Coustard";
 }
 
 .float-left{
@@ -50,6 +51,7 @@ header#titan-header {
   background-color:black;
   z-index: 1;
   padding : 15px 20px 0px 20px;
+  font-weight:bold;
 }
 
 .titan-navbar {
@@ -74,17 +76,19 @@ header#titan-header {
 
 
 
-#titan-header-center, #titan-header-right,  {
+#titan-header-center, #titan-header-right {
+  /*font-family: "Helvetica", "Coustard";*/
   font-family: 'MS Sans-serif', 'sans-serif','Open Sans', 'Arial', 'Helvetica';
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
   box-sizing:border-box;
+  font-size:93%;
 }
 
 
 
 .titan-navbar-cell {
-white-space: nowrap;
+  white-space: nowrap;
 }
 
 #titan-header a {
@@ -92,6 +96,7 @@ white-space: nowrap;
   cursor:pointer;
   /*font-weight: bold;*/
   text-decoration:none;
+  outline:none;
 }
 
 #titan-header-left {
@@ -143,7 +148,9 @@ header.carousel .icon-prev, header.carousel .icon-next {
 }
 header .carousel-indicators {
   right:25px;
+  width:auto;
   width:initial;
+  left:auto;
   left:initial;
 }
 .carousel-control {
@@ -163,13 +170,13 @@ header .carousel-indicators {
 .carousel-control.left {
   background-position: -90% 50%;
   left: 0;
-  background-repeat-x: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .carousel-control.right {
   background-position: 180% 50%;
   right: 0;
-  background-repeat-x: no-repeat;
+  background-repeat: no-repeat;
 }
 
 /* summary */
@@ -191,6 +198,7 @@ header .carousel-indicators {
   background-color:#111;
   color:#fff;
   border:none;
+  border-radius:0px;
   font-size:95%;
 }
 .summary-container .gray .panel {
@@ -204,7 +212,8 @@ header .carousel-indicators {
 .competencies .title , .competencies .content,
 .competencies .link {
   padding: 10px 10px 5px 10px;
-  font-size:90%;  
+  font-size:89%;  
+  text-align:justify;
 }
 .competencies .title {
   font-weight:bold;
@@ -227,8 +236,55 @@ header .carousel-indicators {
 }
 
 #footer {
+  position:relative;
+  padding:15px 15px 0px 15px;
   min-height:100px;
   text-align:center;
   background-color:black;
+  color:white;
+  font-size:95%;
+  /*font-weight: bold;*/
 }
+#footer .row {
+  margin-bottom:15px;
+}
+#footer .row span {
+  margin: 0px 10px 0px 10px;
+}
+#footer a{
+  color:#fff;
+}
+#footer .nav a{
+  font-size:30px;
+  padding:0;
+}
+#footer a:hover{
+  background-color:#555;
+}
+#footer .nav a:hover, #footer .nav a:active, 
+#footer .nav a:visited{
+  background-color:#000;
+  font-size:40px;
+}
+#footer .scroll-top {
+  position:absolute;
+  right:25px;
+}
+#footer .social-media {
+  list-style:none;
+  position:absolute;
+  right:45px;
+  bottom:5px;
+  font-size:30px;
+}
+#footer .social-media a{
+  color: #888;
+  margin-left:10px;
+  padding-bottom:0px;
+}
+#footer .social-media a:hover{
+  background-color:initial;
+}
+
+
 
