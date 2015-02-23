@@ -1,8 +1,9 @@
 <html>
 <head>
 <link rel='stylesheet' type='text/css' href='../css/bootstrap.min.css'/>
-<link rel='stylesheet' type='text/css' href='../css/titan.css'/>
 <link rel='stylesheet' type='text/css' href='../font-awesome/css/font-awesome.min.css'/>
+<link rel='stylesheet' type='text/css' href='../css/titan.css'/>
+
 </head>
 <body>
 <div class="titan-wrap">
@@ -12,7 +13,7 @@
                 <div class='float-lef'>
                 <div class="logo"> <a href="#" > <img src = '../img/logo.png' /> </a></div>
                 <div class="shopping-cart"><a href="#"> 
-                    <i class="fa fa-shopping-cart"></i> <span class='text'> ACCEPTED BITCOIN</span> </a></div>
+                    <i class="fa fa-shopping-cart"></i> <span class='text'>BITCOIN ACCEPTED</span> </a></div>
                 </div>
             </div>
             <div id="titan-header-center" class="titan-navbar-cell">
@@ -21,12 +22,12 @@
                 <a href="#tools" class="titan-top-nav-link is-inactive">TOOLS</a>
                 <a href="#artfolio" class="titan-top-nav-link is-inactive">MY ARTFOLIO</a>
                 <a href="#partnering" class="titan-top-nav-link is-inactive">PARTNERING</a>
-                <a href="#articles" class="titan-top-nav-link is-inactive">ARTicles</a>
+                <a href="#articles" class="titan-top-nav-link is-inactive fat-font">ARTicles</a>
                 <a href="#about" class="titan-top-nav-link is-inactive">ABOUT</a>
             </div>
             <div id="titan-header-right" class="titan-navbar-cell">
                 <span class="titan-session">
-                    <a href="#log_in" class="titan-top-nav-link titan-login">LOGIN</a>
+                    <a href="#sign_in" class="titan-top-nav-link titan-signin">SIGN IN</a>
                     <a href="#sign_up" class="titan-top-nav-link titan-signup">SIGN UP</a>
                 </span>
             </div>
@@ -35,7 +36,7 @@
 
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="myCarousel" class="carousel slide" data-ride='carousel'>
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -44,7 +45,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" role='listbox'>
             <div class="item active">
                 <div class="fill" > <img src="../img/homepage-img.png"/></div>
                 <div class="carousel-caption">
@@ -67,10 +68,10 @@
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+            <
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
+            >
         </a>
     </header>
 
@@ -79,34 +80,34 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="panel panel-default">
-                        <div class='img-container' style="background-image:url('../img/img1.jpg')" ></div>
-                        <div class='title' > artists </div>
+                        <div class='img-container' style="background-image:url('../img/img3.jpg')" ></div>
+                        <div class='title' > Artists </div>
                         <div class='content'> Discover undervalued modern masters on ARTephant </div>
-                        <div class='link'> <a href="#" > Go there now <i class="fa fa-arrow-circle-o-right"></i> </a> </div>
+                        <div class='link'> <a href="#" > Go there now <i class="fa fa-chevron-circle-right" ></i> </a> </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 gray">
                     <div class="panel panel-default">
                         <div class='img-container' style="background-image:url('../img/img2.jpg')" ></div>
                         <div class='title' > Happening on ARTephant </div>
                         <div class='content'>Explore the latest happenings in the art world </div>
-                        <div class='link'> <a href="#" > Go there now <i class="fa fa-arrow-circle-o-right"></i></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class='img-container' style="background-image:url('../img/img3.jpg')" ></div>
-                        <div class='title' > Research on ARTephant </div>
-                        <div class='content'>The tools that take the guesswork out of buying art</div>
-                        <div class='link'> <a href="#" > Go there now <i class="fa fa-arrow-circle-o-right"></i></a> </div>
+                        <div class='link'> <a href="#" > Go there now <i class="fa fa-chevron-circle-right" ></i></a> </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="panel panel-default">
                         <div class='img-container' style="background-image:url('../img/img4.jpg')" ></div>
+                        <div class='title' > Research on ARTephant </div>
+                        <div class='content'>The tools that take the guesswork out of buying art</div>
+                        <div class='link'> <a href="#" > Go there now <i class="fa fa-chevron-circle-right" ></i></a> </div>
+                    </div>
+                </div>
+                <div class="col-md-3 gray">
+                    <div class="panel panel-default">
+                        <div class='img-container' style="background-image:url('../img/img1.jpg')" ></div>
                         <div class='title' > Trending on ARTephant </div>
                         <div class='content'> See what everyone is talking about on ARTephant</div>
-                        <div class='link'> <a href="#" > Go there now <i class="fa fa-arrow-circle-o-right"></i></a> </div>
+                        <div class='link'> <a href="#" > Go there now <i class="fa fa-chevron-circle-right" ></i></a> </div>
                     </div>
                 </div>
             </div>
@@ -134,11 +135,13 @@
                             original art by the greatest artists of all time. 
 
                             Get research, values, forecasts and more. </p>
+                    </div>
+                    <div class="link">
                         <a href="#" class="link">Learn More <i class="fa fa-chevron-circle-right" ></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 gray">
                 <div class="panel">
                     <div class="title">
                         <h4>FREE CUSTOMIZED ANALYSIS</h4>
@@ -153,6 +156,8 @@
                             interface grants users sweeping, in depth  
 
                             analytics on all their favorite artists work. </p>
+                    </div>
+                    <div class="link">
                         <a href="#" class="link">Learn More <i class="fa fa-chevron-circle-right" ></i></a>
                     </div>
                 </div>
@@ -172,11 +177,13 @@
                             host of different reasons. Clearly, not all
 
                             investment quality art is created equal. </p>
+                    </div>
+                    <div class="link">
                         <a href="#" class="link">Learn More <i class="fa fa-chevron-circle-right" ></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 gray">
                 <div class="panel">
                     <div class="title">
                         <h4>ART FORECASTING MODELS</h4>
@@ -191,7 +198,9 @@
                         users the ability to develop sophisticated, 
 
                         custom tailored art forecasting models.</p>
-                        <a href="#" class="link">Learn More <i class=" fa fa-chevron-circle-right" ></i></a>
+                    </div>
+                    <div class="link">
+                        <a href="#" class="link">Learn More <i class="fa fa-chevron-circle-right" ></i></a>
                     </div>
                 </div>
             </div>
@@ -206,9 +215,7 @@
 </div> 
 
 <script type='text/javascript' src='../js/jquery.js'></script>
-<script type='text/javascript' src='../js/affix.js'></script>
-<script type='text/javascript' src='../js/carousel.js'></script>
-<script type='text/javascript' src='../js/scrollspy.js'></script>
+<script type='text/javascript' src='../js/bootstrap.min.js'></script>
 <script type='text/javascript' src='../js/titan.js'></script>
 </body>
 </html>

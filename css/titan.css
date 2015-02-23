@@ -20,10 +20,15 @@ sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
 
 body {
   padding-top: 100px;
+  font-family: "MS Sans-serif", 'sans-serif', 'Georgia';
 }
 
 .float-left{
   float:left;
+}
+
+.fat-font{
+  font-family: 'Arial Black';
 }
 
 a, a:link, a:hover, a:visited{
@@ -70,7 +75,7 @@ header#titan-header {
 
 
 #titan-header-center, #titan-header-right,  {
-  font-family: 'Open Sans', 'Arial', 'Helvetica', 'sans-serif';
+  font-family: 'MS Sans-serif', 'sans-serif','Open Sans', 'Arial', 'Helvetica';
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
   box-sizing:border-box;
@@ -85,7 +90,7 @@ white-space: nowrap;
 #titan-header a {
   color:#ffffff;
   cursor:pointer;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-decoration:none;
 }
 
@@ -105,23 +110,25 @@ white-space: nowrap;
   padding: 0 10.5px 14px 10.5px;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
-.shopping-cart {
-  margin:10px 0 0 10px;
-  font-size:13px;
+div.shopping-cart {
+  /*margin:10px 0 0 10px;*/
+  /*font-size:13px;*/
+  font-size:110%;
 }
 
 
 /* Home Page Carousel */
-
+header.carousel {
+  background-color:black;
+}
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     /*height: 100%;*/
 }
-
 header.carousel .fill {
     width: 100%;
     /*height: 100%;*/
@@ -133,6 +140,36 @@ header.carousel img  {
 }
 header.carousel .icon-prev, header.carousel .icon-next {
   background-color:#000;
+}
+header .carousel-indicators {
+  right:25px;
+  width:initial;
+  left:initial;
+}
+.carousel-control {
+
+  background-image: url(../img/carousel-arrows.png) !important;
+  background-repeat: no-repeat;
+  display: block;
+  font-size: 1em !important;
+  height: 100%;
+  width:100px;
+  padding: 0 !important;
+  position: absolute;
+  text-indent: -9999em;
+  top: 0;
+  z-index: 1;
+}
+.carousel-control.left {
+  background-position: -90% 50%;
+  left: 0;
+  background-repeat-x: no-repeat;
+}
+
+.carousel-control.right {
+  background-position: 180% 50%;
+  right: 0;
+  background-repeat-x: no-repeat;
 }
 
 /* summary */
@@ -154,17 +191,20 @@ header.carousel .icon-prev, header.carousel .icon-next {
   background-color:#111;
   color:#fff;
   border:none;
+  font-size:95%;
 }
-
+.summary-container .gray .panel {
+  background-color:#555;
+}
 .summary-container .title , .summary-container .content,
 .summary-container .link {
-  padding: 10px 10px 0 10px;
+  padding: 7px 5px 3px 10px;
 }
 
 .competencies .title , .competencies .content,
 .competencies .link {
-  padding: 10px 10px 0 10px;
-  font-size:95%;  
+  padding: 10px 10px 5px 10px;
+  font-size:90%;  
 }
 .competencies .title {
   font-weight:bold;
@@ -181,7 +221,7 @@ header.carousel .icon-prev, header.carousel .icon-next {
   color:black;
   
 }
-.competencies .link {
+.competencies .link a{
   font-weight:bold;
   padding-left:0px;
 }
