@@ -119,9 +119,14 @@ header#titan-header {
 }
 
 div.shopping-cart {
-  /*margin:10px 0 0 10px;*/
+  margin:17px 0 0 10px;
   /*font-size:13px;*/
-  font-size:110%;
+  font-size:93%;
+}
+
+.shopping-cart .fa-shopping-cart{
+  margin-right: 7px;
+  font-size:1.5em;
 }
 
 
@@ -183,6 +188,23 @@ header .carousel-indicators {
   background-position: 180% 50%;
   right: 0;
   background-repeat: no-repeat;
+}
+
+.carousel-caption{
+  right:10%;
+  left:40px;
+  text-align:left;
+  padding-bottom:15px;
+}
+.carousel-caption .title{
+  font-size:1.7em;
+  padding-bottom:30px;
+  font-weight:bold;
+  font-family:'Arial Black', 'MS Sans-serif', 'sans-serif','Open Sans', 'Arial', 'Helvetica';
+}
+
+.carousel-caption .content{
+  font-size: 1.5em;
 }
 
 /* summary */
