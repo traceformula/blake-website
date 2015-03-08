@@ -76,6 +76,7 @@ header#titan-header {
   -ms-flex: 1;
   flex: 1;
   text-align: right;
+  position:relative;
 }
 
 
@@ -120,6 +121,21 @@ header#titan-header {
   vertical-align: middle;
   text-decoration: none;
   /*font-size: 14px;*/
+}
+#titan-header-right .navbar-toggle .menutitle{
+  margin-top:-2px;
+}
+#titan-header-right .navbar-toggle .toggle-item {
+  float:left;
+  margin-right:10px;
+}
+#titan-header-right .navbar-toggle {
+  display:block;
+  border:none;
+}
+#titan-header-right .dropdown-toggle{
+  border:1px solid #fff;
+  padding: 10px;
 }
 
 div.shopping-cart {
@@ -174,7 +190,7 @@ header .carousel-indicators {
   position: absolute;
   text-indent: -9999em;
   top: 0;
-  z-index: 1;
+  /*z-index: 1;*/
   opacity:0.9;
   filter:alpha(opacity=90);
 }
@@ -441,6 +457,43 @@ header .carousel-indicators {
 .modal-content .bottom {
   margin-top:10px;
 }
+
+/***** side bar (MORE) *****/
+#titan-nav-collapse {
+  position:absolute;
+  right:0px;
+  margin-top:20px;
+  top:100px;
+  width:300px;
+  background-color:#000;
+  color:#888;
+  z-index:2;
+  border-bottom:1px solid #888;
+  border-left:1px solid #fff;
+}
+#titan-nav-collapse .menu-item{
+  border-top: 1px solid #888;
+  padding:13px 10px;
+}
+#titan-nav-collapse a {
+  color:#888;
+}
+#titan-nav-collapse .social-media {
+  list-style:none;
+  font-size:25px;
+}
+#titan-nav-collapse .social-media li {
+  padding:10px;
+}
+
+.titan-dropdown-menu{
+  z-index:2;
+}
+.titan-dropdown-menu .form-control{
+  border-radius:0;
+
+}
+
 @media (min-width: 768px){
   .modal-dialog{
     width:500px;
@@ -476,4 +529,13 @@ header .carousel-indicators {
 }
 .float-right{
   float:right;
+}
+.nav-collapse {
+  display:none;
+}
+.dropdown-menu {
+  left:auto;
+  left:initial;
+  right:0;
+  background-color:black;
 }
