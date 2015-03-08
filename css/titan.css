@@ -22,6 +22,10 @@ body {
   padding-top: 100px;
   /*font-family: "MS Sans-serif", 'sans-serif', 'Georgia';*/
   font-family: "Helvetica", "Coustard";
+
+  /*fix the jumping fixed nav-bar */
+  overflow:inherit !important;
+  padding-right:0px !important;
 }
 
 .float-left{
@@ -329,5 +333,147 @@ header .carousel-indicators {
   background-color:initial;
 }
 
+/***** MODAL DIALOG *****/
+.modal-content {
+  background-color:white;
+  border-radius:0;
+  color:black;
+}
 
+.modal-header {
+  border-bottom:none;
+  margin-top:15px;
+  margin-left:10px;
+  padding-bottom:0px;
+}
 
+.modal-header .close {
+  font-size:3em;
+  font-weight:100;
+  margin-top:-0.2em;
+  opacity:1;
+  font-family:'Chiller', 'Arial Narrow';
+  filter:alpha(opacity=1);
+  outline: none;
+}
+.modal-body{
+  text-align:center;
+  padding-left:65px;
+  padding-right:65px;
+  padding-top:0;
+}
+.modal-body .fat-font {
+  font-size: 1.8em;
+}
+
+.modal-body .description {
+  text-align:justify;
+  font-size:1.61em;
+  padding-bottom:10px;
+}
+
+/*special for forgot-password */
+.modal-body .forgot-password{
+  height:48px;
+  padding:10px 0 0 0;
+  font-family: "MS Sans-serif", 'sans-serif', 'Georgia';
+  font-size:90%;
+  color:#222;
+}
+.modal-body .forgot-password input{
+  margin-right:5px;
+}
+.modal-body .forgot-password a{
+  color:#222;
+}
+.modal-body .forgot-password a:visited{
+  color:#222;
+}
+
+.modal-content .form-control {
+  border-radius:0;
+  height:40px;
+}
+.modal-content .btn {
+  border-radius:0;
+  border:none;
+  background-color:#000;
+  color:#fff;
+  width:100%;
+  padding:0;
+  margin-bottom:10px;
+  position:relative;
+}
+.modal-content .square {
+  float:left;
+  width:38px;
+  height:38px;
+  border: 1px solid #fff;
+  position:absolute;
+  bottom:0;
+  top:0;
+  margin:1px;
+  background-color:#000;
+}
+
+.modal-content .modal-icons::before {
+  font-size:200%;
+}
+
+.modal-content .btn span {
+  display:inline-block;
+  padding:10px 0px;
+}
+
+.form-control::-webkit-input-placeholder {
+   font-family: 'Arial Narrow', "MS Sans-serif", 'sans-serif', 'Georgia';
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Arial Narrow', "MS Sans-serif", 'sans-serif', 'Georgia'; 
+}
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Arial Narrow', "MS Sans-serif", 'sans-serif', 'Georgia';
+}
+.form-control:-ms-input-placeholder {  
+   font-family: 'Arial Narrow', "MS Sans-serif", 'sans-serif', 'Georgia'; 
+}
+
+.modal-content .bottom {
+  margin-top:10px;
+}
+@media (min-width: 768px){
+  .modal-dialog{
+    width:500px;
+  }
+}
+
+/***** support *****/
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* this supports elements to be centered */
+.table {
+  display: table;
+  height:100%;
+  border:none;
+  padding:0;
+  margin:0;
+}
+.table-cell {
+  display: table-cell;
+  border:none;
+  padding:0;
+  margin:0;
+  vertical-align: middle;
+}
+.float-left {
+  float:left;
+}
+.float-right{
+  float:right;
+}
