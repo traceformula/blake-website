@@ -117,16 +117,26 @@ header#titan-header {
 .appraisal-btn{
   text-align:center;
 }
-.appraisal-btn .btn-success {
+.appraisal-btn .btn-success, 
+.slider-sign-up.btn.btn-success{
   background-color:#337ab7;
   border:#236aa7;
   font-size:1.1em;
 }
-.appraisal-btn .btn-success:hover {
+.appraisal-btn .btn-success:hover, 
+.slider-sign-up.btn.btn-success:hover {
   background-color:#236aa7;
 }
 .appraisal-btn i{
   font-size:1.1em;
+}
+.slider-sign-up.btn.btn-success{
+  position:absolute;
+  bottom:20px;
+  left:40%;
+  font-size:1em;
+  z-index:15;
+  padding:3px 12px;
 }
 
 .titan-nav-link, .titan-top-nav-link, .titan-user-name {
@@ -229,7 +239,7 @@ header .carousel-indicators {
   right:10%;
   left:40px;
   text-align:left;
-  padding-bottom:15px;
+  padding-bottom:0px;
 }
 .carousel-caption .title{
   font-size:1.7em;
