@@ -1,0 +1,8 @@
+@media screen and (min-width:1340px) {
+    .titan-nav-link, .titan-top-nav-link, .titan-user-name {
+        padding: 0 10.5px 14px 10.5px;
+    }
+    #titan-header-center {
+      padding: 0px 20px 0px 80px;
+    }
+}

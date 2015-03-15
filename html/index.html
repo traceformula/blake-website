@@ -3,6 +3,7 @@
 <link rel='stylesheet' type='text/css' href='../css/bootstrap.min.css'/>
 <link rel='stylesheet' type='text/css' href='../font-awesome/css/font-awesome.min.css'/>
 <link rel='stylesheet' type='text/css' href='../css/titan.css'/>
+<link rel='stylesheet' type='text/css' href='../css/media-queries.css'/>
 
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <a href="#sign_in" class="titan-top-nav-link titan-signin" data-toggle="modal" data-target="#signin-modal">SIGN IN</a>
                     <a href="#sign_up" class="titan-top-nav-link titan-signup" data-toggle="modal" data-target="#signup-modal">SIGN UP</a>
                 </span>
-                <div>
+                <div class="more-container">
                     <ul class="nav pull-right navbar-nav">
                     <li class="">
                         <a class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target="#titan-nav-collapse">
@@ -47,7 +48,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown titan-search">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
                         <ul class="dropdown-menu titan-dropdown-menu" style="padding:12px;">
                             <form class="form-inline">
@@ -82,9 +83,11 @@
                 <div class="carousel-caption">
                     <h1 class="title"> ARTephant </h1>
                     <div class="content"> 
+                        <h1>
                         <p> Discover </p>
                         <p> The World's Greatest </p>
-                        <p> Undervalued, Original Fined Arts </p>
+                        <p> Undervalued, Original Fine Arts </p>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -93,9 +96,11 @@
                 <div class="carousel-caption">
                     <h1 class="title"> ARTephant </h1>
                     <div class="content"> 
+                        <h1>
                         <p> Discover </p>
                         <p> The World's Greatest </p>
-                        <p> Undervalued, Original Fined Arts </p>
+                        <p> Undervalued, Original Fine Arts </p>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -104,9 +109,11 @@
                 <div class="carousel-caption">
                     <h1 class="title"> ARTephant </h1>
                     <div class="content"> 
+                        <h1>
                         <p> Discover </p>
                         <p> The World's Greatest </p>
-                        <p> Undervalued, Original Fined Arts </p>
+                        <p> Undervalued, Original Fine Arts </p>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -135,7 +142,7 @@
                 <div class="col-md-3 gray">
                     <div class="panel panel-default">
                         <div class='img-container' style="background-image:url('../img/img2.jpg')" ></div>
-                        <div class='title' > Happening on ARTephant </div>
+                        <div class='title' > Happenings on ARTephant </div>
                         <div class='content'>Explore the latest happenings in the art world </div>
                         <div class='link'> <a href="#" > Go there now <i class="fa fa-chevron-circle-right" ></i></a> </div>
                     </div>
@@ -199,7 +206,7 @@
 
                             pending software solutions & customizable 
 
-                            interface grants users sweeping, in depth  
+                            interface, grants users sweeping, in depth  
 
                             analytics on all their favorite artists work. </p>
                     </div>
@@ -257,10 +264,12 @@
             <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
       </ul>
       <ul class="social-media text-muted nav-pills navbar-nav" >
-            <li> <a class="text-muted" href="http://www.google.com" >&nbsp;<i class="fa fa-facebook"></i></a></li>
+            <li> <a class="text-muted" href="http://www.google.com" ><i class="fa fa-facebook">&nbsp;</i></a></li>
             <li> <a href="http://www.google.com" ><i class="fa fa-twitter">&nbsp;</i></a></li>            
             <li> <a href="http://www.google.com" ><i class="fa fa-google-plus">&nbsp;</i></a> </li>
             <li> <a href="http://www.google.com" ><i class="fa fa-linkedin">&nbsp;</i></a></li>
+            <li> <a href="http://www.google.com" ><i class="fa fa-pinterest">&nbsp;</i></a> </li>
+            <li> <a href="http://www.google.com" ><i class="fa fa-instagram">&nbsp;</i></a></li>
       </ul>
       <div class="container">
         
@@ -344,7 +353,7 @@
                 <div class="modal-body signin-modal">
                     <p class="fat-font"> ARTephant</p>
                     <br/>
-                    <p class="description">Discover The World&rsquo;s Greatest Undervalued, Original Fined Art</p>
+                    <p class="description">Discover The World&rsquo;s Greatest Undervalued, Original Fine Art</p>
                     <div class="clearfix"></div>
                     
                     <div class="modal-social-icons">
@@ -353,6 +362,13 @@
                             <a href='#' class="btn btn-default twitter"> <div class="square table"><i class="table-cell fa fa-twitter modal-icons"></i> </div><span>SIGN UP WITH TWITTER </span></a>
                             <a href='#' class="btn btn-default linkedin"> <div class="square table"><i class="table-cell fa fa-linkedin modal-icons"></i> </div> <span>SIGN UP WITH LINKEDIN </span></a>
                     </div> 
+                    <div class="modal-terms">
+                        <form>
+                            <label><input type="checkbox" name="terms_of_service"> 
+                                I accept the <a href="#">Terms of User </a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </form>
+                    </div>
                     <div class="bottom">
                         ALREADY HAVE AN ACCOUNT? <a href="#"  data-dismiss="modal" data-toggle="modal" data-target="#signin-modal"> SIGN IN </a>
                     </div>
@@ -375,10 +391,12 @@
     <div class="menu-item"> <a href="#">SOCIAL NETWORKS</a>
         <div>
             <ul class="social-media text-muted nav-pills navbar-nav" >
-                <li> <a class="text-muted" href="http://www.google.com" >&nbsp;<i class="fa fa-facebook"></i></a></li>
+                <li> <a class="text-muted" href="http://www.google.com" ><i class="fa fa-facebook">&nbsp;</i></a></li>
                 <li> <a href="http://www.google.com" ><i class="fa fa-twitter">&nbsp;</i></a></li>            
                 <li> <a href="http://www.google.com" ><i class="fa fa-google-plus">&nbsp;</i></a> </li>
                 <li> <a href="http://www.google.com" ><i class="fa fa-linkedin">&nbsp;</i></a></li>
+                <li> <a href="http://www.google.com" ><i class="fa fa-pinterest">&nbsp;</i></a> </li>
+                <li> <a href="http://www.google.com" ><i class="fa fa-instagram">&nbsp;</i></a></li>
             </ul>
         </div>
     </div>
