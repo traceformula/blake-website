@@ -6,6 +6,9 @@ $(document).ready(function(){
     $('.scroll-top').click(function(){
       $('body,html').animate({scrollTop:0},1000);
     });
+    $('.carousel-control').on("dragstart", function(ev){
+        return false;
+    });
 });
 
 /*function centerModal() {

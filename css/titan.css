@@ -19,7 +19,7 @@ sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
  }
 
 body {
-  padding-top: 100px;
+  padding-top: 135px;
   /*font-family: "MS Sans-serif", 'sans-serif', 'Georgia';*/
   font-family: "Helvetica", "Coustard";
 
@@ -51,7 +51,7 @@ a, a:link, a:hover, a:visited{
 header#titan-header {
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 135px;
   background-color:black;
   z-index: 1;
   padding : 15px 20px 0px 20px;
@@ -115,36 +115,65 @@ header#titan-header {
 }
 
 #titan-header-center .appraisal-btn{
-  margin-top:23px;
+  margin-top:13px;
   font-size:110%;
 }
 .appraisal-btn{
   text-align:center;
 }
+.appraisal-btn-elm, .slider-sign-up-elm{
+  margin:0 auto;
+  padding:5px;
+  display:inline-block;
+  /*background:#999999;
+  opacity:0.9;
+  filter:alpha(opacity=90);*/
+}
 .appraisal-btn .btn-success, 
 .slider-sign-up.btn.btn-success{
   /*background-color:#337ab7;*/
   /*background-color:rgb(74, 148, 191);*/
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(177, 214, 233)), to(#337ab7));
+  /*background-color:rgb(40, 146, 225);*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(rgb(177, 214, 233)), to(#337ab7));
   background: gradient(linear, left top, left bottom, from(rgb(177, 214, 233)), to(#337ab7));
   background: -o-gradient(linear, left top, left bottom, from(rgb(177, 214, 233)), to(#337ab7));
-  background: -ms-linear-gradient(top, rgb(177, 214, 233)0%, #337ab7 100%);
+  background: -ms-linear-gradient(top, rgb(177, 214, 233)0%, #337ab7 100%);*/
+/*  background: -webkit-gradient(linear, left top, left bottom, from(rgb(67, 210, 252)), to(rgb(40, 146, 225)));
+  background: gradient(linear, left top, left bottom, from(rgb(67, 210, 252)), to(rgb(40, 146, 225)));
+  background: -o-gradient(linear, left top, left bottom, from(rgb(67, 210, 252)), to(rgb(40, 146, 225)));
+  background: -ms-linear-gradient(top, rgb(67, 210, 252)0%, rgb(40, 146, 225) 100%);*/
+  /*background-color:rgb(10, 198, 231);*/
+  /*background-color:rgb(37, 190, 235);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 198, 231)), to(rgb(37, 190, 235)));
+  background: gradient(linear, left top, left bottom, from(rgb(10, 198, 231)), to(rgb(37, 190, 235)));
+  background: -o-gradient(linear, left top, left bottom, from(rgb(10, 198, 231)), to(rgb(37, 190, 235)));
+  background: -ms-linear-gradient(top, rgb(10, 198, 231)0%, rgb(37, 190, 235) 100%);*/
+  /*background: -webkit-gradient(linear, left top, left bottom,  from(rgb(193, 219, 232)), to(rgb(94,163,196)));
+  background: gradient(linear, left top, left bottom, from(rgb(193, 219, 232)), to(rgb(94,163,196)));*/
+  background: -webkit-gradient(linear, left top, left bottom,  from(rgb(141, 199, 226)), to(rgb(46,135,197)));
+  background: gradient(linear, left top, left bottom, from(rgb(141, 199, 226)), to(rgb(46,135,197)));
+  background: -o-gradient(linear, left top, left bottom, from(rgb(141, 199, 226)), to(rgb(46,135,197)));
+  background: -ms-linear-gradient(top, rgb(141, 199, 226)0%, rgb(46,135,197) 100%);
+  /*opacity:0.8;
+  filter:alpha(opacity=80);*/
   border:#236aa7;
   font-size:1.1em;
 }
 .appraisal-btn .btn-success:hover, 
 .slider-sign-up.btn.btn-success:hover {
   background:#236aa7;
+  opacity:1;
+  filter:alpha(opacity=100);
 }
 .appraisal-btn i{
   font-size:1.1em;
 }
-.slider-sign-up.btn.btn-success{
+.slider-sign-up-elm{
   position:absolute;
-  bottom:28px;
+  bottom:23px;
   left:40%;
   font-size:1em;
-  z-index:2;
+  z-index:15;
   /*padding:3px 12px;*/
 }
 
@@ -591,7 +620,7 @@ header .carousel-indicators {
   background-color:black;
 }
 .dropdown-menu .form-inline input[type="text"]{
-  min-width:200px;
+  min-width:400px;
 }
 #signup-modal .btn, #signin-modal .btn {
   /*padding:2px 0 2px 0;*/
