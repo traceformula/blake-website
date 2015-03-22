@@ -150,9 +150,11 @@ header#titan-header {
   background: -ms-linear-gradient(top, rgb(10, 198, 231)0%, rgb(37, 190, 235) 100%);*/
   /*background: -webkit-gradient(linear, left top, left bottom,  from(rgb(193, 219, 232)), to(rgb(94,163,196)));
   background: gradient(linear, left top, left bottom, from(rgb(193, 219, 232)), to(rgb(94,163,196)));*/
+  background-color:rgb(46,135,197);
   background: -webkit-gradient(linear, left top, left bottom,  from(rgb(141, 199, 226)), to(rgb(46,135,197)));
   background: gradient(linear, left top, left bottom, from(rgb(141, 199, 226)), to(rgb(46,135,197)));
   background: -o-gradient(linear, left top, left bottom, from(rgb(141, 199, 226)), to(rgb(46,135,197)));
+  background: -moz-linear-gradient(rgb(141, 199, 226), rgb(46,135,197));
   background: -ms-linear-gradient(top, rgb(141, 199, 226)0%, rgb(46,135,197) 100%);
   /*opacity:0.8;
   filter:alpha(opacity=80);*/
